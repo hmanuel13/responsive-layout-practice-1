@@ -55,7 +55,7 @@ header a{
 }
 
 header li{
-  float: left;
+  /* float: left; */
   display: inline;
   padding: 0 10px 0 20px;
 }
