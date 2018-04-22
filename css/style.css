@@ -159,6 +159,13 @@ article#main-col{
   color: honeydew;
 }
 
+article#main-col img{
+  float: left;
+  width: 200px;
+  border: 5px solid black;
+  margin: 5px;
+}
+
 footer{
   padding: 20px;
   margin-top: 20px;
