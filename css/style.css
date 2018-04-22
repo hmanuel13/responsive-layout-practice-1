@@ -1,11 +1,11 @@
 body{
   font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
-  color: lightblue;
+  color: blanchedalmond;
   line-height: 1.2;
   padding: 0;
   margin: 0;
-  background-color: darkslategray;
+  background-color: #232323;
 }
 
 /*  Global */
@@ -22,25 +22,33 @@ ul{
 
 .button_1{
   height: 38px;
-  background: burlywood;
+  background: darkred;
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
-  color: darkslategray;
+  color: blanchedalmond;
 }
 
-*/  header */
-header{
-  background: lightslategray;
+.dark{
+  padding: 15px;
   color: lightgray;
+  background: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* header */
+header{
+  background: gray;
+  color: blanchedalmond;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: lightcoral 3px solid;
+  border-bottom: darkred 3px solid;
 
 }
 
 header a{
-  color: snow;
+  color: honeydew;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -66,7 +74,7 @@ header nav{
 }
 
 header .current a{
-  color: burlywood;
+  color: black;
   font-weight: bold;
 }
 
@@ -84,24 +92,27 @@ header a:hover{
 
 #showcase{
   min-height: 400px;
-  background: url('../images/cover-v2.jpg') no-repeat;
+  background-color: #232323;
+  background: url('../images/showcase1.jpg') no-repeat;
 }
 
 #showcase h1{
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 55px;
   margin-bottom: 10px;
+  margin-left: 90px;
 }
 
 #showcase p{
   font-size: 20px;
+  margin-left: 90px;
 }
 
 /* Newsletter */
 #newsletter{
   padding: 15px;
-  color: snow;
-  background: darkslategray;
+  color: lightgray;
+  background: black;
 }
 
 #newsletter h1{
@@ -135,10 +146,23 @@ header a:hover{
   width: 90px;
 }
 
+/* incantation page */
+aside#sidebar{
+  width: 30%;
+  margin-top: 10px;
+  float: right;
+}
+
+article#main-col{
+  float: left;
+  width: 65%;
+  color: honeydew;
+}
+
 footer{
   padding: 20px;
   margin-top: 20px;
-  color: snow;
+  color: honeydew;
   background-color: darkred;
   text-align: center;
 }
