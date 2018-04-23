@@ -20,15 +20,6 @@ ul{
   padding: 0;
 }
 
-.button_1{
-  height: 38px;
-  background: darkred;
-  border: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: blanchedalmond;
-}
-
 .dark{
   padding: 15px;
   color: lightgray;
@@ -55,7 +46,6 @@ header a{
 }
 
 header li{
-  /* float: left; */
   display: inline;
   padding: 0 10px 0 20px;
 }
@@ -74,7 +64,7 @@ header nav{
 }
 
 header .current a{
-  color: black;
+  color: darkred;
   font-weight: bold;
 }
 
@@ -84,7 +74,7 @@ header .highlight{
 }
 
 header a:hover{
-  color: darkred;
+  color: black;
   font-weight: bold;
 }
 
@@ -101,6 +91,7 @@ header a:hover{
   font-size: 55px;
   margin-bottom: 10px;
   margin-left: 90px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #showcase p{
@@ -130,6 +121,15 @@ header a:hover{
   width: 250px;
 }
 
+.button_1{
+  height: 34px;
+  background: darkred;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: blanchedalmond;
+}
+
 /* Boxes */
 #boxes{
   margin-top: 20px;
@@ -146,7 +146,7 @@ header a:hover{
   width: 90px;
 }
 
-/* incantation page */
+/* Incantation page */
 aside#sidebar{
   width: 30%;
   margin-top: 10px;
@@ -172,4 +172,143 @@ footer{
   color: honeydew;
   background-color: darkred;
   text-align: center;
+}
+
+/* About page */
+#about{
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+#about img{
+  width: 350px;
+  border: 3px solid black;
+}
+
+/* Media Queries */
+
+@media(max-width: 749px){
+  header #exocet,
+  header nav,
+  header li,
+  #newsletter h1,
+  #newsletter form
+  {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  aside#sidebar{
+    width: 90%;
+    margin-top: 5px;
+    float: none;
+    
+  }
+
+  #showcase{
+    min-height: 400px;
+    background-color: #232323;
+    background: url('../images/showcase2.jpg') no-repeat;
+  }
+  
+  #showcase h1{
+    padding-top: 140px;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }
+  
+  #showcase p{
+    font-size: 16px;
+    margin-left: 25px;
+  }
+  
+  article#main-col{
+    float: none;
+    width: 90%;
+    color: honeydew;
+  }
+  
+  article#main-col img{
+    float: left;
+    width: 200px;
+    border: 5px solid black;
+    margin: 5px;
+  }
+
+  header{
+    padding-bottom: 10px;
+  }
+
+  #showcase h1{
+    margin-top: 25px;
+  }
+
+  #boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 5px;
+  }
+    
+  #boxes .box img{
+    width: 75px;
+  }
+
+  #about img{
+    width: 300px;
+    border: 3px solid black;
+  }
+    
+}
+
+@media(max-width: 452px){
+
+  header a{
+    font-size: 12px;
+    text-transform: none;
+  }
+
+  #showcase{
+    background: url('../images/showcaseMobileImg.jpg') no-repeat;
+  }
+
+  #boxes .box
+  {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #newsletter .button_1{
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"]{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  article#main-col img{
+    float: left;
+    width: 100px;
+    border: 5px solid black;
+    margin: 5px;
+  }
+
+  #about img{
+    width: 200px;
+    border: 3px solid black;
+  }
+
 }
